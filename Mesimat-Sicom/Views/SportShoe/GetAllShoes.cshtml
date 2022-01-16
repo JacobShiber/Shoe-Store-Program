@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "GetAllShoes";
+}
+
+<div>
+    @foreach (var shoe in Model)
+    {
+        <h2>@shoe.CompanyName - @shoe.ModelName</h2>
+        <h3>@shoe.Size</h3>
+        <h3>@shoe.Price</h3>
+    }
+</div>
+
